@@ -439,5 +439,5 @@ class FrontendController extends Controller
         $blogs=Blog::where('status', 1)->orderBy('id', 'desc')->get();
         return view('frontEnd.layouts.pages.blog.details', compact('blog', 'blogs'));
     }
-    
+
 }

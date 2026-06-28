@@ -1,13 +1,13 @@
 @extends('backEnd.layouts.master')
 @section('title','Landing Page Edit')
 @section('css')
-<link href="{{asset('public/backEnd')}}/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-<link href="{{asset('public/backEnd')}}/assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
-<link href="{{asset('public/backEnd')}}/assets/libs/summernote/summernote-lite.min.css" rel="stylesheet" type="text/css" />
+<link href="{{ asset('backEnd/assets/libs/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('backEnd/assets/libs/flatpickr/flatpickr.min.css') }}" rel="stylesheet" type="text/css" />
+<link href="{{ asset('backEnd/assets/libs/summernote/summernote-lite.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
 <div class="container-fluid">
-    
+
     <!-- start page title -->
     <div class="row">
         <div class="col-12">
@@ -18,8 +18,8 @@
                 <h4 class="page-title">Landing Page Edit</h4>
             </div>
         </div>
-    </div>       
-    <!-- end page title --> 
+    </div>
+    <!-- end page title -->
    <div class="row justify-content-center">
     <div class="col-lg-10">
         <div class="card">
@@ -69,7 +69,7 @@
                     </div>
                     <!-- col-end -->
 
-                
+
 
                     <div class="col-sm-12">
                         <div class="form-group mb-3">
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                     <!-- col end -->
-                    
+
                     <div class="col-sm-6 mb-3">
                         <div class="form-group">
                             <label for="image_one" class="form-label">Image One</label>
@@ -101,7 +101,7 @@
                             @enderror
                         </div>
                     </div>
-                    
+
                      <div class="col-sm-6 mb-3">
                         <div class="form-group">
                             <label for="image_two" class="form-label">Image Two</label>
@@ -114,7 +114,7 @@
                             @enderror
                         </div>
                     </div>
-                    
+
                      <div class="col-sm-6 mb-3">
                         <div class="form-group">
                             <label for="image_three" class="form-label">Image Three</label>
@@ -132,7 +132,7 @@
                     <!--    <label for="image">Review Image *</label>-->
                     <!--    <div class="input-group control-group increment">-->
                     <!--        <input type="file" name="image" class="form-control @error('image') is-invalid @enderror" />-->
-                           
+
                             <!--<div class="input-group-btn">-->
                             <!--    <button class="btn btn-success btn-increment" type="button"><i class="fa fa-plus"></i></button>-->
                             <!--</div>-->

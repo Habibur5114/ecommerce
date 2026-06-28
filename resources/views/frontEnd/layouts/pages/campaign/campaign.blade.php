@@ -6,19 +6,21 @@
         <title>{{ $generalsetting->name }}</title>
         <link rel="shortcut icon" href="{{asset($generalsetting->favicon)}}" type="image/x-icon" />
         <!-- fot awesome -->
-        <link rel="stylesheet" href="{{ asset('public/frontEnd/campaign/css') }}/all.css" />
         <!-- core css -->
-        <link rel="stylesheet" href="{{ asset('public/frontEnd/campaign/css') }}/bootstrap.min.css" />
+        <link rel="stylesheet" href="{{ asset('frontEnd/campaign/css/all.css') }}" />
+        <link rel="stylesheet" href="{{ asset('frontEnd/campaign/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('frontEnd/campaign/css/animate.css') }}" />
 
-        <link rel="stylesheet" href="{{ asset('public/frontEnd/campaign/css') }}/animate.css" />
         <!-- owl carousel -->
-        <link rel="stylesheet" href="{{ asset('public/frontEnd/campaign/css') }}/owl.theme.default.css" />
-        <link rel="stylesheet" href="{{ asset('public/frontEnd/campaign/css') }}/owl.carousel.min.css" />
-        <!-- owl carousel -->
-        <link rel="stylesheet" href="{{ asset('public/frontEnd/campaign/css') }}/select2.min.css" />
+        <link rel="stylesheet" href="{{ asset('frontEnd/campaign/css/owl.theme.default.css') }}" />
+        <link rel="stylesheet" href="{{ asset('frontEnd/campaign/css/owl.carousel.min.css') }}" />
+
+        <!-- select2 -->
+        <link rel="stylesheet" href="{{ asset('frontEnd/campaign/css/select2.min.css') }}" />
+
         <!-- common css -->
-        <link rel="stylesheet" href="{{ asset('public/frontEnd/campaign/css') }}/style.css" />
-        <link rel="stylesheet" href="{{ asset('public/frontEnd/campaign/css') }}/responsive.css" />
+        <link rel="stylesheet" href="{{ asset('frontEnd/campaign/css/style.css') }}" />
+        <link rel="stylesheet" href="{{ asset('frontEnd/campaign/css/responsive.css') }}" />
         @foreach($pixels as $pixel)
         <!-- Facebook Pixel Code -->
         <script>

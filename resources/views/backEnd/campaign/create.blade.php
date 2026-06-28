@@ -1,14 +1,15 @@
 @extends('backEnd.layouts.master')
 @section('title','Landing Page Create')
 @section('css')
-<link href="{{asset('public/backEnd')}}/assets/libs/summernote/summernote-lite.min.css" rel="stylesheet" type="text/css" />
+<link href="{{ asset('backEnd/assets/libs/summernote/summernote-lite.min.css') }}" rel="stylesheet" type="text/css" />
 
-<link href="{{asset('public/backEnd')}}/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
-<link href="{{asset('public/backEnd')}}/assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css" />
+<link href="{{ asset('backEnd/assets/libs/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css" />
+
+<link href="{{ asset('backEnd/assets/libs/flatpickr/flatpickr.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
 <div class="container-fluid">
-    
+
     <!-- start page title -->
     <div class="row">
         <div class="col-12">
@@ -19,16 +20,16 @@
                 <h4 class="page-title">Landing Page Create</h4>
             </div>
         </div>
-    </div>       
-    <!-- end page title --> 
+    </div>
+    <!-- end page title -->
    <div class="row justify-content-center">
     <div class="col-lg-10">
         <div class="card">
             <div class="card-body">
                 <form action="{{route('campaign.store')}}" method="POST" class=row data-parsley-validate=""  enctype="multipart/form-data">
                     @csrf
-                        
-                        
+
+
                        <div class="col-sm-12">
                         <div class="form-group mb-3">
                             <label for="name" class="form-label">Landing Page Title *</label>
@@ -40,7 +41,7 @@
                             @enderror
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-12">
                         <div class="form-group mb-3">
                             <label for="banner_title" class="form-label">Banner Title *</label>
@@ -79,19 +80,19 @@
                     </div>
                     <!-- col-end -->
 
-                 
+
                     <!-- col-end -->
 
                     <div class="col-sm-12">
                         <div class="form-group mb-3">
                             <label for="product_id" class="form-label">Products *</label>
                              <select class="select2 form-control @error('product_id') is-invalid @enderror" value="{{ old('product_id') }}" name="product_id" data-placeholder="Choose ..." required>
-                                
+
                                 <option value="">Select..</option>
                                 @foreach($products as $value)
                                 <option value="{{$value->id}}">{{$value->name}}</option>
                                 @endforeach
-                                
+
                             </select>
                             @error('product_id')
                                 <span class="invalid-feedback" role="alert">
@@ -240,7 +241,7 @@
 <script src="{{asset('public/backEnd/')}}/assets/libs//summernote/summernote-lite.min.js"></script>
 <script>
     $(".summernote").summernote({
-        placeholder: "Enter Your Text Here",    
+        placeholder: "Enter Your Text Here",
     });
 </script>
 <script type="text/javascript">

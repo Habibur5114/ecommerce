@@ -1,8 +1,8 @@
-@extends('frontEnd.layouts.master') 
-@section('title','Hot Deals') 
+@extends('frontEnd.layouts.master')
+@section('title','Hot Deals')
 @push('css')
-<link rel="stylesheet" href="{{asset('public/frontEnd/css/jquery-ui.css')}}" />
-@endpush 
+<link rel="stylesheet" href="{{asset('frontEnd/css/jquery-ui.css')}}" />
+@endpush
 @section('content')
 
 

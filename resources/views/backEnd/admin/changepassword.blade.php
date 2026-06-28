@@ -1,11 +1,12 @@
 @extends('backEnd.layouts.master')
 @section('title','Change Password')
 @section('css')
-<link href="{{asset('public/backEnd')}}/assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+<!-- Select2 CSS -->
+<link href="{{ asset('backEnd/assets/libs/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
 <div class="container-fluid">
-    
+
     <!-- start page title -->
     <div class="row">
         <div class="col-12">
@@ -20,8 +21,8 @@
                 <h4 class="page-title">Change Password</h4>
             </div>
         </div>
-    </div>       
-    <!-- end page title --> 
+    </div>
+    <!-- end page title -->
    <div class="row">
     <div class="col-lg-12">
         <div class="card">

@@ -1,7 +1,7 @@
 @extends('frontEnd.layouts.master')
 @section('title', $category->meta_title)
 @push('css')
-    <link rel="stylesheet" href="{{ asset('public/frontEnd/css/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ asset('frontEnd/css/jquery-ui.css') }}" />
 @endpush
 @push('seo')
     <meta name="app-url" content="{{ route('category', $category->slug) }}" />

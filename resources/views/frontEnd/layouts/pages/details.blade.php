@@ -25,7 +25,7 @@
 @endpush
 
 @push('css')
-<link rel="stylesheet" href="{{ asset('public/frontEnd/css/zoomsl.css') }}">
+<link rel="stylesheet" href="{{ asset('frontEnd/css/zoomsl.css') }}">
 @endpush
 
 @section('content')

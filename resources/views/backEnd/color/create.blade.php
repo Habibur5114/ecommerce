@@ -5,7 +5,7 @@
 @endsection
 @section('content')
 <div class="container-fluid">
-    
+
     <!-- start Color title -->
     <div class="row">
         <div class="col-12">
@@ -16,8 +16,8 @@
                 <h4 class="page-title">Color Create</h4>
             </div>
         </div>
-    </div>       
-    <!-- end Color title --> 
+    </div>
+    <!-- end Color title -->
    <div class="row">
     <div class="col-lg-12">
         <div class="card">
@@ -46,7 +46,7 @@
                                 </span>
                             @enderror
                         </div>
-                    </div>                    
+                    </div>
                     <!-- col-end -->
                     <div class="col-sm-6 mb-3">
                         <div class="form-group">
@@ -87,7 +87,7 @@
 <script>
   $(".summernote").summernote({
     placeholder: "Enter Your Text Here",
-    
+
   });
 </script>
 @endsection

@@ -1,7 +1,7 @@
 @extends('frontEnd.layouts.master')
 @section('title',$subcategory->meta_title)
 @push('css')
-<link rel="stylesheet" href="{{asset('public/frontEnd/css/jquery-ui.css')}}" />
+<link rel="stylesheet" href="{{asset('frontEnd/css/jquery-ui.css')}}" />
 @endpush
 @push('seo')
 <meta name="app-url" content="{{route('subcategory',$subcategory->slug)}}" />
@@ -229,10 +229,10 @@
                         @else
 
                         <div class="pro_btn">
-                            
-                            
-                            
-                            
+
+
+
+
                             <form action="{{ route('cart.add-card') }}" method="POST">
                                         @csrf
                                         <input type="hidden" name="id" value="{{ $value->id }}" />
@@ -243,7 +243,7 @@
 
                                         </form>
 
-                           
+
                                     <form action="{{ route('cart.store') }}" method="POST">
                                         @csrf
                                         <input type="hidden" name="id" value="{{ $value->id }}" />
