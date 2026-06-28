@@ -13,20 +13,20 @@
         <link rel="canonical" href="" />
         @stack('seo')
         @stack('css')
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/bootstrap.min.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/animate.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/all.min.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/owl.carousel.min.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/owl.theme.default.min.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/mobile-menu.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/select2.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/bootstrap.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/animate.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/all.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/owl.carousel.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/owl.theme.default.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/mobile-menu.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/select2.min.css')}}" />
         <!-- toastr css -->
-        <link rel="stylesheet" href="{{asset('public/backEnd/')}}/assets/css/toastr.min.css" />
+        <link rel="stylesheet" href="{{ asset('backEnd/assets/css/toastr.min.css') }}" />
 
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/wsit-menu.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/style.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/responsive.css')}}" />
-        <link rel="stylesheet" href="{{asset('public/frontEnd/css/main.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/wsit-menu.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/style.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/responsive.css')}}" />
+        <link rel="stylesheet" href="{{asset('frontEnd/css/main.css')}}" />
 
         <meta name="facebook-domain-verification" content="38f1w8335btoklo88dyfl63ba3st2e" />
 
@@ -67,21 +67,21 @@
         })(window,document,'script','dataLayer','GTM-{{ $gtm->code }}');</script>
         <!-- End Google Tag Manager -->
         @endforeach
-        
+
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0N9J4EL5D"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-        
+
           gtag('config', 'G-D0N9J4EL5D');
         </script>
-        
-        
+
+
     </head>
     <body class="gotop">
-        
+
         <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSLSLNRR"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -807,6 +807,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                $("body").css("overflow-y", "auto");
             })
         </script>
- 
+
     </body>
 </html>

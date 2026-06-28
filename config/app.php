@@ -185,7 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
-        Intervention\Image\ImageServiceProvider::class,
+        // Intervention\Image\ImageServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -194,7 +194,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        shurjopayv2\ShurjopayLaravelPackage8\ShurjopayServiceProvider::class
+        // shurjopayv2\ShurjopayLaravelPackage8\ShurjopayServiceProvider::class
 
     ],
 
